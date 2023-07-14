@@ -4,18 +4,27 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div>
+
       <ul>
           <li>
-              <RouterLink to="/">Parcours scolaire</RouterLink>
+              <RouterLink to="/">
+                  <i class="fa fa-graduation-cap"></i>
+                  Parcours scolaire</RouterLink>
           </li>
           <li>
-              <RouterLink to="/">Parcours professionnel</RouterLink>
+              <RouterLink to="/">
+                  <i class="fa fa-id-card"></i>
+                  Parcours professionnel</RouterLink>
           </li>
           <li>
-              <RouterLink to="/">Compétences</RouterLink>
+              <RouterLink to="/">
+                  <i class="fa fa-file-code-o"></i>
+                  Compétences</RouterLink>
           </li>
           <li>
-              <RouterLink to="/">Portfolio</RouterLink>
+              <RouterLink to="/">
+                  <i class="fa fa-folder"></i>
+                  Portfolio</RouterLink>
           </li>
       </ul>
   </div>
@@ -27,10 +36,17 @@ import { RouterLink, RouterView } from 'vue-router'
   a{
       text-decoration: none;
       color: black;
+      font-family: VT323;
+      font-size: xx-large;
+      transition: 0.5s;
+  }
+
+  a:hover{
+      color: white;
   }
 
   div{
-      height: 300px;
+      height: 150px;
       width: 100%;
       background-color: coral;
   }
